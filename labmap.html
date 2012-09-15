@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+    "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+<html>
+  <head>
+    <title>UTCS Labmap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css"/>
+    <link rel="stylesheet" href="css/tipTip.css"/>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+    <script src="js/jquery.blockUI.js"></script>
+    <script src="js/jquery.tipTip.minified.js"></script>
+    <script src="js/labmap.js"></script>
+    <style>
+      body {
+        line-height: normal;
+      }
+      .ui-title {
+        line-height: 1.1em;
+      }
+      .content_div {
+        display: none;
+      }
+      .content_div:first-child {
+        display: block;
+      }
+      .empty {
+        height: 36px;
+      }
+      /* Credit to Philip on Stack Overflow for this http://stackoverflow.com/a/7885385 */
+      [data-role=page] {
+        height: 100% !important;
+        position: relative !important;
+      }
+      [data-role=footer] {
+        bottom: 0;
+        position: absolute !important;
+        top: auto !important;
+        width:100%;
+      }
+    </style>
+    <script>
+      // Credit to Jasper on Stack Overflow for this http://stackoverflow.com/a/6850059
+      $(document).delegate('[data-role="navbar"] a', 'click', function () {
+        $(this).addClass('ui-btn-active');
+        $('.content_div').hide();
+        $('#' + $(this).attr('data-href')).show();
+      });
+    </script>
+  </head>
+  <body>
+    <div data-role="page">
+
+      <div data-role="header">
+        <h1>UTCS Labmap</h1>
+        <a href="https://play.google.com/store/apps/details?id=utcs.heatmap">Get it on Android</a>
+      </div>
+
+      <div data-role="content">
+
+        <div class="content_div" id="ens1">
+          <div class="ui-grid-d">
+            <div id="ens1_0_0" class="ui-block-a">
+            </div>
+            <div id="ens1_1_0" class="ui-block-b">
+            </div>
+            <div id="ens1_2_0" class="ui-block-c">
+            </div>
+            <div id="ens1_3_0" class="ui-block-d">
+            </div>
+            <div id="ens1_4_0" class="ui-block-e">
+              <img src="img/cpu_meh.png"/>
+            </div>
+          </div>
+
+          <div class="ui-grid-d">
+            <div id="ens1_0_1" class="ui-block-a">
+            </div>
+            <div id="ens1_1_1" class="ui-block-b">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="ens1_2_1" class="ui-block-c">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="ens1_3_1" class="ui-block-d">
+            </div>
+            <div id="ens1_4_1" class="ui-block-e">
+              <img src="img/cpu_meh.png"/>
+            </div>
+          </div>
+
+          <div class="ui-grid-d">
+            <div id="ens1_0_2" class="ui-block-a">
+            </div>
+            <div id="ens1_1_2" class="ui-block-b">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="ens1_2_2" class="ui-block-c">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="ens1_3_2" class="ui-block-d">
+            </div>
+            <div id="ens1_4_2" class="ui-block-e">
+              <img src="img/cpu_meh.png"/>
+            </div>
+          </div>
+
+          <div class="ui-grid-d">
+            <div id="ens1_0_3" class="ui-block-a">
+            </div>
+            <div id="ens1_1_3" class="ui-block-b">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="ens1_2_3" class="ui-block-c">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="ens1_3_3" class="ui-block-d">
+            </div>
+            <div id="ens1_4_3" class="ui-block-e">
+              <img src="img/cpu_meh.png"/>
+            </div>
+          </div>
+
+          <div class="ui-grid-d">
+            <div id="ens1_0_4" class="ui-block-a">
+            </div>
+            <div id="ens1_1_4" class="ui-block-b">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="ens1_2_4" class="ui-block-c">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="ens1_3_4" class="ui-block-d">
+            </div>
+            <div id="ens1_4_4" class="ui-block-e">
+              <img src="img/cpu_meh.png"/>
+            </div>
+          </div>
+
+          <div class="ui-grid-d">
+            <div id="ens1_0_5" class="ui-block-a">
+            </div>
+            <div id="ens1_1_5" class="ui-block-b">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="ens1_2_5" class="ui-block-c">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="ens1_3_5" class="ui-block-d">
+            </div>
+            <div id="ens1_4_5" class="ui-block-e">
+              <img src="img/cpu_meh.png"/>
+            </div>
+          </div>
+
+          <div class="ui-grid-d">
+            <div id="ens1_0_6" class="ui-block-a">
+            </div>
+            <div id="ens1_1_6" class="ui-block-b">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="ens1_2_6" class="ui-block-c">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="ens1_3_6" class="ui-block-d">
+            </div>
+            <div id="ens1_4_6" class="ui-block-e">
+              <img src="img/cpu_meh.png"/>
+            </div>
+          </div>
+
+          <div class="ui-grid-d">
+            <div id="ens1_0_7" class="ui-block-a">
+            </div>
+            <div id="ens1_1_7" class="ui-block-b">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="ens1_2_7" class="ui-block-c">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="ens1_3_7" class="ui-block-d">
+            </div>
+            <div id="ens1_4_7" class="ui-block-e">
+              <img src="img/cpu_meh.png"/>
+            </div>
+          </div>
+
+          <div class="ui-grid-d">
+            <div id="ens1_0_8" class="ui-block-a">
+            </div>
+            <div id="ens1_1_8" class="ui-block-b">
+            </div>
+            <div id="ens1_2_8" class="ui-block-c">
+            </div>
+            <div id="ens1_3_8" class="ui-block-d">
+            </div>
+            <div id="ens1_4_8" class="ui-block-e">
+              <img src="img/cpu_meh.png"/>
+            </div>
+          </div>
+        </div><!-- /ens1 -->
+
+
+        <div class="content_div" id="ens31nr">
+          <div class="ui-grid-a">
+            <div class="ui-block-a">
+              <div class="ui-grid-b">
+                <div id="ens31nr_0_0" class="ui-block-a">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+                <div id="ens31nr_1_0" class="ui-block-b">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+                <div id="ens31nr_2_0" class="ui-block-c">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="ui-block-b">
+              <div class="ui-grid-b">
+                <div id="ens31nr_3_0" class="ui-block-a">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+                <div id="ens31nr_4_0" class="ui-block-b">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+                <div id="ens31nr_5_0" class="ui-block-c">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ui-grid-a">
+            <div class="ui-block-a">
+              <div class="ui-grid-b">
+                <div id="ens31nr_0_1" class="ui-block-a">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+                <div id="ens31nr_1_1" class="ui-block-b">
+                </div>
+                <div id="ens31nr_2_1" class="ui-block-c">
+                </div>
+              </div>
+            </div>
+            <div class="ui-block-b">
+              <div class="ui-grid-b">
+                <div id="ens31nr_3_1" class="ui-block-a">
+                </div>
+                <div id="ens31nr_4_1" class="ui-block-b">
+                </div>
+                <div id="ens31nr_5_1" class="ui-block-c">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ui-grid-a">
+            <div class="ui-block-a">
+              <div class="ui-grid-b">
+                <div id="ens31nr_0_2" class="ui-block-a">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+                <div id="ens31nr_1_2" class="ui-block-b">
+                </div>
+                <div id="ens31nr_2_2" class="ui-block-c">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="ui-block-b">
+              <div class="ui-grid-b">
+                <div id="ens31nr_3_2" class="ui-block-a">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+                <div id="ens31nr_4_2" class="ui-block-b">
+                </div>
+                <div id="ens31nr_5_2" class="ui-block-c">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ui-grid-a">
+            <div class="ui-block-a">
+              <div class="ui-grid-b">
+                <div id="ens31nr_0_3" class="ui-block-a">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+                <div id="ens31nr_1_3" class="ui-block-b">
+                </div>
+                <div id="ens31nr_2_3" class="ui-block-c">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="ui-block-b">
+              <div class="ui-grid-b">
+                <div id="ens31nr_3_3" class="ui-block-a">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+                <div id="ens31nr_4_3" class="ui-block-b">
+                </div>
+                <div id="ens31nr_5_3" class="ui-block-c">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ui-grid-a">
+            <div class="ui-block-a">
+              <div class="ui-grid-b">
+                <div id="ens31nr_0_4" class="ui-block-a">
+                </div>
+                <div id="ens31nr_1_4" class="ui-block-b">
+                </div>
+                <div id="ens31nr_2_4" class="ui-block-c">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="ui-block-b">
+              <div class="ui-grid-b">
+                <div id="ens31nr_3_4" class="ui-block-a">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+                <div id="ens31nr_4_4" class="ui-block-b">
+                </div>
+                <div id="ens31nr_5_4" class="ui-block-c">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ui-grid-a">
+            <div class="ui-block-a">
+              <div class="ui-grid-b">
+                <div id="ens31nr_0_5" class="ui-block-a">
+                </div>
+                <div id="ens31nr_1_5" class="ui-block-b">
+                </div>
+                <div id="ens31nr_2_5" class="ui-block-c">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="ui-block-b">
+              <div class="ui-grid-b">
+                <div id="ens31nr_3_5" class="ui-block-a">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+                <div id="ens31nr_4_5" class="ui-block-b">
+                </div>
+                <div id="ens31nr_5_5" class="ui-block-c">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ui-grid-a">
+            <div class="ui-block-a">
+              <div class="ui-grid-b">
+                <div id="ens31nr_0_6" class="ui-block-a">
+                </div>
+                <div id="ens31nr_1_6" class="ui-block-b">
+                </div>
+                <div id="ens31nr_2_6" class="ui-block-c">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="ui-block-b">
+              <div class="ui-grid-b">
+                <div id="ens31nr_3_6" class="ui-block-a">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+                <div id="ens31nr_4_6" class="ui-block-b">
+                </div>
+                <div id="ens31nr_5_6" class="ui-block-c">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ui-grid-a">
+            <div class="ui-block-a">
+              <div class="ui-grid-b">
+                <div id="ens31nr_0_7" class="ui-block-a">
+                </div>
+                <div id="ens31nr_1_7" class="ui-block-b">
+                </div>
+                <div id="ens31nr_2_7" class="ui-block-c">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="ui-block-b">
+              <div class="ui-grid-b">
+                <div id="ens31nr_3_7" class="ui-block-a">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+                <div id="ens31nr_4_7" class="ui-block-b">
+                </div>
+                <div id="ens31nr_5_7" class="ui-block-c">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="empty"></div>
+
+          <div class="ui-grid-a">
+            <div class="ui-block-a">
+              <div class="ui-grid-b">
+                <div id="ens31nr_0_9" class="ui-block-a">
+                </div>
+                <div id="ens31nr_1_9" class="ui-block-b">
+                </div>
+                <div id="ens31nr_2_9" class="ui-block-c">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="ui-block-b">
+              <div class="ui-grid-b">
+                <div id="ens31nr_3_9" class="ui-block-a">
+                  <img src="img/cpu_meh.png"/>
+                </div>
+                <div id="ens31nr_4_9" class="ui-block-b">
+                </div>
+                <div id="ens31nr_5_9" class="ui-block-c">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /ens31nr -->
+
+
+        <div class="content_div" id="painter">
+
+          <div class="ui-grid-d">
+            <div id="painter_0_0" class="ui-block-a">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="painter_1_0" class="ui-block-b">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="painter_2_0" class="ui-block-c">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="painter_3_0" class="ui-block-d">
+            </div>
+            <div id="painter_4_0" class="ui-block-e">
+              <img src="img/cpu_meh.png"/>
+            </div>
+          </div>
+
+          <div class="ui-grid-d">
+            <div id="painter_0_1" class="ui-block-a">
+            </div>
+            <div id="painter_1_1" class="ui-block-b">
+            </div>
+            <div id="painter_2_1" class="ui-block-c">
+            </div>
+            <div id="painter_3_1" class="ui-block-d">
+            </div>
+            <div id="painter_4_1" class="ui-block-e">
+              <img src="img/cpu_meh.png"/>
+            </div>
+          </div>
+
+          <div class="ui-grid-d">
+            <div id="painter_0_2" class="ui-block-a">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="painter_1_2" class="ui-block-b">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="painter_2_2" class="ui-block-c">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="painter_3_2" class="ui-block-d">
+            </div>
+            <div id="painter_4_2" class="ui-block-e">
+              <img src="img/cpu_meh.png"/>
+            </div>
+          </div>
+
+          <div class="ui-grid-d">
+            <div id="painter_0_3" class="ui-block-a">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="painter_1_3" class="ui-block-b">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="painter_2_3" class="ui-block-c">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="painter_3_3" class="ui-block-d">
+            </div>
+            <div id="painter_4_3" class="ui-block-e">
+              <img src="img/cpu_meh.png"/>
+            </div>
+          </div>
+
+          <div class="ui-grid-d">
+            <div id="painter_0_4" class="ui-block-a">
+            </div>
+            <div id="painter_1_4" class="ui-block-b">
+            </div>
+            <div id="painter_2_4" class="ui-block-c">
+            </div>
+            <div id="painter_3_4" class="ui-block-d">
+            </div>
+            <div id="painter_4_4" class="ui-block-e">
+              <img src="img/cpu_meh.png"/>
+            </div>
+          </div>
+
+          <div class="ui-grid-d">
+            <div id="painter_0_5" class="ui-block-a">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="painter_1_5" class="ui-block-b">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="painter_2_5" class="ui-block-c">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="painter_3_5" class="ui-block-d">
+            </div>
+            <div id="painter_4_5" class="ui-block-e">
+              <img src="img/cpu_meh.png"/>
+            </div>
+          </div>
+
+          <div class="ui-grid-d">
+            <div id="painter_0_6" class="ui-block-a">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="painter_1_6" class="ui-block-b">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="painter_2_6" class="ui-block-c">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="painter_3_6" class="ui-block-d">
+            </div>
+            <div id="painter_4_6" class="ui-block-e">
+              <img src="img/cpu_meh.png"/>
+            </div>
+          </div>
+
+          <div class="ui-grid-d">
+            <div id="painter_0_7" class="ui-block-a">
+            </div>
+            <div id="painter_1_7" class="ui-block-b">
+            </div>
+            <div id="painter_2_7" class="ui-block-c">
+            </div>
+            <div id="painter_3_7" class="ui-block-d">
+            </div>
+            <div id="painter_4_7" class="ui-block-e">
+              <img src="img/cpu_meh.png"/>
+            </div>
+          </div>
+
+          <div class="ui-grid-d">
+            <div id="painter_0_8" class="ui-block-a">
+            </div>
+            <div id="painter_1_8" class="ui-block-b">
+            </div>
+            <div id="painter_2_8" class="ui-block-c">
+            </div>
+            <div id="painter_3_8" class="ui-block-d">
+            </div>
+            <div id="painter_4_8" class="ui-block-e">
+              <img src="img/cpu_meh.png"/>
+            </div>
+          </div>
+
+          <div class="ui-grid-d">
+            <div id="painter_0_9" class="ui-block-a">
+            </div>
+            <div id="painter_1_9" class="ui-block-b">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="painter_2_9" class="ui-block-c">
+              <img src="img/cpu_meh.png"/>
+            </div>
+            <div id="painter_3_9" class="ui-block-d">
+            </div>
+            <div id="painter_4_9" class="ui-block-e">
+            </div>
+          </div>
+        </div><!-- /painter -->
+
+      </div>
+      <div data-role="footer" data-postition="fixed">
+        <div data-role="navbar">
+          <ul>
+            <li><a class="ui-btn-active ui-state-persist" href="#" data-href="ens1">ENS 1</a></li>
+            <li><a href="#" data-href="ens31nr">ENS 31NR</a></li>
+            <li><a href="#" data-href="painter">PAI 5.38</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ajaxStart($.blockUI({message: '<img src="img/loading.gif"/>'}))
+      .ajaxStop($.unblockUI);
+    </script>
+  </body>
+</html>
