@@ -1,3 +1,9 @@
+UTCS Labmap Mobile Web
+======================
+This is the frontend for a mobile web app that displays which computers are in use and which are free at the University of Texas at Austin Department of Computer Science Unix computer labs. Green computers are free, red computers with 'sad' faces are occupied, and red computers with 'X's are (probably) down. Tap any computer to get its name and relative load.
+
+License
+=======
 Copyright (c) 2012 Aaron Stolarz
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
